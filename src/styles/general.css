@@ -1,0 +1,61 @@
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-main {
+  width: 100%;
+  padding: 0 6%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.header-buttons > button {
+  padding: 0 48px;
+  cursor: pointer;
+  border: none;
+  height: 56px;
+  border-radius: 38px;
+  background-color: transparent;
+}
+
+.header-button-primary {
+  background-color: var(--blue) !important;
+  color: white;
+}
+
+.header-navigation {
+  display: flex;
+  gap: 40px;
+  font-size: clamp(0.72rem, 1vw, 0.92rem);
+  font-weight: 500;
+}
+
+.header-navigation > a {
+  cursor: pointer;
+}
+
+.header-navigation > a:active {
+}
+
+.header-navigation > a:visited {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.header-message {
+  width: 100%;
+  text-align: center;
+  background-color: var(--yellow);
+  font-size: 0.72rem;
+  padding: 12px 0;
+  font-weight: 500;
+}

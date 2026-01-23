@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon",
+    "sync": "browser-sync start --proxy localhost:8000 --files '**/*.php, **/*.js, **/*.css' --reload-delay 500",
+    "dev": "concurrently \"npm run server\" \"npm run sync\"",
+    "php:dev": "php -S localhost:8000 -t src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.11"
+  }
+}

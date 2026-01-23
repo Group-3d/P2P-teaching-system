@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("../assets/fonts/OpenSans-VariableFont_wdth_wght.ttf");
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  --blue: rgb(50, 55, 191);
+  --text: rgb(43, 43, 43);
+  --yellow: rgb(249, 197, 64);
+  --text-book: clamp(1rem, 1.28vw, 1.2rem);
+  --text-regular: clamp(0.88rem, 1.08vw, 1rem);
+  font-family: OpenSans;
+  color: var(--text);
+}
+
+button {
+  font-family: OpenSans;
+}
