@@ -8,7 +8,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
+.nav{
     background: white;
     padding: 40px 60px;
     display: flex;
@@ -17,21 +17,21 @@ nav{
     text-align: center;
 }
 
-nav .logo{
+header .logo{
     font-size: 30px;
     margin: 50px;
     font-weight: 500;
     color: rgb(26, 117, 227);
 }
 
-    nav a {
+    header a {
       margin-left: 25px;
       text-decoration: none;
       color: #333;
       font-weight: 500;
  }
 
-     nav a.btn {
+     header a.btn {
       background: rgb(26, 117, 227);
       color: #fff;
       padding: 8px 16px;
@@ -94,16 +94,16 @@ nav .logo{
       font-size: 30px;
     }
 
-    .benefits {
+    .features {
       padding: 80px 60px;
       text-align: center;
     }
 
-    .benefits h2 {
+    .features h2 {
       margin-bottom: 40px;
     }
 
-    .benefit-box {
+    .features-box {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 30px;
