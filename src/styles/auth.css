@@ -1,0 +1,87 @@
+.login-page,
+.register-page {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  gap: 48px;
+  background-color: rgb(243, 245, 251);
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-wrapper,
+.register-form-wrapper {
+  width: 74%;
+  height: 80%;
+  background-color: white;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 48px;
+  gap: 24px;
+  box-shadow: 0 0 2px rgba(54, 54, 54, 0.346);
+}
+
+.login-form-header,
+.register-form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form-header > h1,
+.register-form-header > h1 {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: clamp(1.48rem, 2.4vw, 2.32rem);
+}
+
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 65%;
+}
+
+.login-form > input,
+.register-form > input {
+  padding: 20px 28px;
+  border: none;
+  background-color: rgba(220, 220, 220, 0.505);
+  box-shadow: 0 0 2px rgba(54, 54, 54, 0.346);
+  border-radius: 8px;
+  font-family: OpenSans;
+  outline: none;
+}
+
+.login-form > button,
+.register-form > button {
+  height: 68px;
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  font-family: OpenSans;
+  font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.login-form > input:focus,
+.register-form > input:focus {
+  box-shadow: 0 0 2px rgb(244, 231, 40);
+}
+
+.colored {
+  color: var(--yellow);
+}
+
+.login-form-wrapper > a,
+.register-form-wrapper > a {
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+}

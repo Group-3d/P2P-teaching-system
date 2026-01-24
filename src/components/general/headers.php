@@ -9,8 +9,8 @@
             <a>Contact Us</a>
         </nav>
         <div class="header-buttons">
-            <button>Sign in</button>
-            <button class="header-button-primary">Register</button>
+            <button id="to_login_btn">Sign in</button>
+            <button class="header-button-primary to_register">Register</button>
         </div>
     </div>
     <div class="header-message">
