@@ -68,11 +68,11 @@ function contributePopup() {
 function contributeButton() {
   document
     .getElementById("question-button")
-    .addEventListener("click", contributePopup);
+    ?.addEventListener("click", contributePopup);
   return () =>
     document
       .getElementById("question-button")
-      .removeEventListener("click", contributePopup);
+      ?.removeEventListener("click", contributePopup);
 }
 
 function topicSelect() {
@@ -93,3 +93,65 @@ function topicSelect() {
 topicSelect();
 
 contributeButton();
+
+function openPopup() {
+  const page = document.querySelector(".topic-page");
+
+  if (document.querySelector(".contribute-wrapper")) return;
+
+  // Popup
+  const div = document.createElement("div");
+  div.classList.add("contribute-wrapper");
+
+  // Popup Form
+  const form = document.createElement("form");
+  form.classList.add("contribute-form");
+
+  // Exit Button
+  const exitButton = document.createElement("div");
+  exitButton.textContent = "x";
+  exitButton.id = "contribute-exit";
+  exitButton.classList.add("exit-btn");
+  exitButton.addEventListener("click", closePopup);
+
+  const title = document.createElement("span");
+  title.classList.add("form-title");
+  title.textContent = "Start a topic to be Discussed";
+
+  // Form Contents
+  const input = document.createElement("input");
+  input.classList.add("contribute-form-input");
+
+  // Button
+  const buttonWrapper = document.createElement("div");
+  buttonWrapper.classList.add("contribute-form-button-wrapper");
+
+  const button_1 = document.createElement("button");
+  button_1.type = "submit";
+  button_1.textContent = "Submit";
+  button_1.classList.add("contribute-form-button");
+  //   button_1.classList.add("contribute-submit-button");
+
+  buttonWrapper.appendChild(button_1);
+
+  form.appendChild(input);
+  form.appendChild(buttonWrapper);
+
+  div.appendChild(exitButton);
+  div.appendChild(title);
+  div.appendChild(form);
+
+  page.append(div);
+
+  return () => exitButton.removeEventListener("click", closePopup);
+}
+
+function TopicButtonHandler() {
+  const button = document.querySelector("#topic-button");
+
+  if (!button) return;
+
+  button.addEventListener("click", openPopup);
+  return () => button.removeEventListener("click", openPopup);
+}
+TopicButtonHandler();

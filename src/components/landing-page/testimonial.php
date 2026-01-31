@@ -6,9 +6,15 @@
 
     <div class="testimonial-main">
         <div class="testimonial-main-images">
-            <div class="testimonial-img" id="testimonial-img-0"></div>
-            <div class="testimonial-img" id="testimonial-img-0"></div>
-            <div class="testimonial-img" id="testimonial-img-0"></div>
+            <div class="testimonial-img" id="testimonial-img-0">
+                <img src="../../assets/images/IMG_8188.webp" alt="profile" />
+            </div>
+            <div class="testimonial-img" id="testimonial-img-0">
+                <img src="../../assets/images/IMG_8190.webp" alt="profile" />
+            </div>
+            <div class="testimonial-img" id="testimonial-img-0">
+                <img src="../../assets/images/IMG_8187.webp" alt="profile" />
+            </div>
         </div>
 
         <div class="testimonial-data">

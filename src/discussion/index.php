@@ -7,6 +7,7 @@
         <link href="../style.css" type="text/css" rel="stylesheet" />
         <link rel="stylesheet" href="../Topic/file.css">
         <link rel="stylesheet" href="../styles/general.css" />
+        <link rel="stylesheet" href="../styles/discussion.css" />
         <script src="../functions/discussion.js" type="module" defer></script>
     </head>
     <body>

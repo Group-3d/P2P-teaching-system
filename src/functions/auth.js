@@ -15,6 +15,8 @@ export function login_form_submit() {
 
       const data = await res.json();
       console.log("Success: ", data);
+
+      window.location = "/";
     } catch (err) {
       console.error("Submit failed: ", err);
     }
@@ -41,6 +43,8 @@ export function register_form_submit() {
 
       const data = await res.json();
       console.log("Success: ", data);
+
+      window.location = "/login.php";
     } catch (err) {
       console.error("Submit failed: ", err);
     }

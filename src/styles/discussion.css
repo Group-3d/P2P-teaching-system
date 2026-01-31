@@ -236,19 +236,28 @@
   gap: 4px;
 }
 
-.contribute-form-textarea {
+.contribute-form-textarea,
+.contribute-form-input {
   border: none;
   background-color: rgba(35, 35, 35, 0.139);
   border-radius: 12px;
   padding: 12px 20px;
-  height: 320px;
-  box-shadow: 0 0 2px rgba(18, 18, 18, 0.456);
+  box-shadow: 0 0 2px rgba(164, 164, 164, 0.456);
   outline: none;
 }
 
-.contribute-form-textarea:focus {
+.contribute-form-textarea {
+  height: 240px;
+}
+
+.contribute-form-textarea:focus,
+.contribute-form-input:focus {
   outline: rgba(254, 219, 47, 0.67);
   box-shadow: 0 0 3px rgba(254, 219, 47, 0.67);
+}
+
+.contribute-form-input {
+  height: 60px;
 }
 
 .contribute-form-button-wrapper {
