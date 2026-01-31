@@ -71,11 +71,11 @@ export function set_landing_page_testimonials() {
 }
 
 export function to_login() {
-  if (
-    window.location.pathname != "/" &&
-    window.location.pathname.includes(".php")
-  )
-    return;
+  // if (
+  //   window.location.pathname != "/" &&
+  //   window.location.pathname.includes(".php")
+  // )
+  //   return;
 
   const button = document.querySelector("#to_login_btn");
 
@@ -91,7 +91,7 @@ export function to_login() {
 }
 
 export function to_register() {
-  const button = document.querySelector(".to_register");
+  const button = document.querySelectorAll(".to_register");
 
   if (!button) return;
 
@@ -99,6 +99,8 @@ export function to_register() {
     window.location = "/register.php";
   }
 
-  button.addEventListener("click", navigate);
-  return button.removeEventListener("click", navigate);
+  button.forEach((element) => element.addEventListener("click", navigate));
+  return () => {
+    button.forEach((element) => element.removeEventListener("click", navigate));
+  };
 }

@@ -1,0 +1,254 @@
+.private-study {
+  width: 100%;
+  padding: 8px 6%;
+  padding-bottom: 140px;
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+}
+
+.study-partners-wrapper {
+  width: 280px;
+  min-height: 400px;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.409);
+  display: flex;
+  border-radius: 4px;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 0;
+  justify-content: space-between;
+}
+
+.study-partners {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.study-partners-title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  padding: 12px;
+}
+
+.partners-list {
+  list-style: none;
+}
+
+.partners-list li {
+  padding: 14px 18px;
+  font-size: 0.92rem;
+}
+
+.list-active {
+  background-color: rgba(252, 223, 0, 0.249);
+}
+
+.study-partners-wrapper > button {
+  align-self: center;
+  border: none;
+  background-color: var(--yellow);
+  color: white;
+  font-family: OpenSans;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 18px 32px;
+}
+
+.study-button-wrapper {
+  display: flex;
+  background-color: var(--background);
+  justify-content: flex-end;
+}
+
+#study-button {
+  border: none;
+  background-color: var(--yellow);
+  color: white;
+  font-family: OpenSans;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 20px 48px;
+}
+
+.study-main-wrapper {
+  width: calc(100% - 338px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.study-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.study-card-wrapper,
+.study-card {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.study-card {
+  gap: 12px;
+  font-size: 0.88rem;
+}
+
+.study-card-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-identity {
+  display: flex;
+  gap: 12px;
+}
+
+.study-card-author {
+  font-weight: 600;
+}
+
+.study-card-author-tag {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(172, 204, 243);
+  overflow: hidden;
+  font-weight: 700;
+}
+
+.study-card-author-date {
+  font-style: italic;
+}
+
+.study-card-topic {
+  font-size: clamp(2rem, 2.52vw, 2.8rem);
+  font-weight: 600;
+  width: 100%;
+}
+
+.contribute-wrapper {
+  width: 80%;
+  min-height: 80vh;
+  height: fit-content;
+  position: fixed;
+  inset: 50%;
+  translate: -50% -50%;
+  background-color: var(--background);
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 0 3px rgba(18, 18, 18, 0.456);
+  max-width: 1140px;
+  padding: 20px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: reveal 0.8s ease-in-out;
+}
+
+@keyframes reveal {
+  from {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.wrapper-closer {
+  animation: unreveal 0.8s ease-in-out forwards;
+}
+
+@keyframes unreveal {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+}
+
+.exit-btn {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(222, 45, 45);
+  padding: 12px;
+}
+
+.form-title {
+  font-size: clamp(1.4rem, 1.8vw, 1.72rem);
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.contribute-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+
+.contribute-form-textarea,
+.contribute-form-input {
+  border: none;
+  background-color: rgba(35, 35, 35, 0.139);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow: 0 0 2px rgba(164, 164, 164, 0.456);
+  outline: none;
+}
+
+.contribute-form-textarea {
+  height: 240px;
+}
+
+.contribute-form-textarea:focus,
+.contribute-form-input:focus {
+  outline: rgba(254, 219, 47, 0.67);
+  box-shadow: 0 0 3px rgba(254, 219, 47, 0.67);
+}
+
+.contribute-form-input {
+  height: 60px;
+}
+
+.contribute-form-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contribute-form-button {
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  font-family: OpenSans;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 20px 48px;
+}
+
+.finder-wrapper {
+  min-height: 340px;
+}

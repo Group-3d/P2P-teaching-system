@@ -11,6 +11,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--background);
 }
 
 .header-buttons {
@@ -58,4 +59,96 @@ header {
   font-size: 0.72rem;
   padding: 12px 0;
   font-weight: 500;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--blue);
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-main {
+  padding: 80px 6%;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  height: 48px;
+  font-size: 0.8rem;
+  width: 100%;
+  background-color: rgb(11, 8, 71);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-main-left {
+  display: flex;
+  width: 34%;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.footer-main-left > div:first-child {
+}
+
+.footer-main-left > div:nth-child(2) {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.footer-main-left > div:nth-child(2) > input {
+  width: calc(100% - 180px);
+  border: none;
+  height: 64px;
+  padding: 0 28px;
+}
+
+.footer-main-left > div:nth-child(2) > button {
+  width: 180px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  height: 64px;
+  background-color: var(--yellow);
+}
+
+.footer-main-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 56px;
+}
+
+.footer-main-nav > ul {
+  list-style: none;
+  font-size: 0.88rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-main-nav > ul > li:first-child {
+  font-weight: 700;
+}
+
+.footer-main-contacts {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-main-contacts > img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
 }

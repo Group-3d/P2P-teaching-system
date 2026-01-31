@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-  background-color: rgb(243, 245, 251);
+  background-color: var(--background);
 }
 
 .landing-page-banner {
@@ -320,10 +320,15 @@
 
 #testimonial-data-name {
   font-weight: 700;
-  font-weight: 1.1rem;
+  font-size: 1.4rem;
+}
+
+#testimonial-data-school {
+  font-size: 1.02rem;
 }
 
 .testimonial-content {
   width: 45%;
   text-align: center;
+  font-size: var(--text-book);
 }
